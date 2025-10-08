@@ -1,4 +1,5 @@
 import React from 'react'
+// import "./Home.css"
 import "../../css/Home.css"
 import {Link} from 'react-router-dom'
 
@@ -85,6 +86,7 @@ const PropertyList = () => {
                 return (
                 <Card
                     key= {property._id}
+                     id={property._id} 
                     image={property.images[0].url}
                     name = {property.propertyName}
                     address={`${property.address.city} , ${property.address.state} , ${property.address.pincode}`}

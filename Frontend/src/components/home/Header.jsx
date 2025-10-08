@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <>
     <nav className = 'header row sticky-top'>
-        <img src = '/assets/logo.png' alt ='logo'  className='logo'/>
+        <img src = '/Assets/logo.png' alt ='logo'  className='logo'/>
         <div className = 'search_filter'>
             <Search/>
             <Filter/>
@@ -21,7 +21,7 @@ const Header = () => {
 
         <div className = 'dropdown'>
             <span className = 'material-sumbols-outlined web_log dropdown-toggle' role='button' id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src='/assets/avatar.png' className = 'user-img rounded-circle w-25 h-25' alt='icon'/>
+                <img src='/Assets/avatar.png' className = 'user-img rounded-circle w-25 h-25' alt='icon'/>
 
             </span>
 
