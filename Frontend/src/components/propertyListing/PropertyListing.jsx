@@ -1,7 +1,10 @@
 import React from 'react'
 import PropertyImg from './PropertyImg'
 import "./PropertyListing.css"
-// import "../../css/PropertyListing.css"
+import PropertyAmenities from './PropertyAmenities'
+import PaymentForm from './PaymentForm'
+import PropertyMapInfo from './PropertyMapInfo'
+// import "../css/PropertyListing.css"
 
 const PropertyListing = () => {
   return (
@@ -21,11 +24,26 @@ const PropertyListing = () => {
               Max number of guests : 6
                 </p>
                 <hr/>
-
+                <PropertyAmenities amenities ={["Wifi","kitchen","Pool" ,"AC"]} />
 
           </div>
+
+          <div className = 'property-payment col-md-4 col-sm-12 col-12' >
+            <PaymentForm/>
+          </div>
+
+
+
+
         </div>
-        {/* <PropertyImg */}
+
+        <hr/>
+        <div className = 'property-map'>
+          <div className = 'map-image-exinfo-container row'>
+            <PropertyMapInfo/>
+          </div>
+        </div>
+      
     </div>
   )
 }
